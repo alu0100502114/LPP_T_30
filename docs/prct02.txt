@@ -8,3 +8,14 @@ fichero fuente) y las ejecuta.
 
 Algunos intérpretes generan código binario de las instrucciones más usadas
 en el fichero que está interpretando para que su ejecución sea más rápida.
+
+El fichero ".sh" contiene en la primera línea:
+#! /bin/sh
+que le indica que ha de ser interpretado mediante el SHELL bash
+y su contenido son instrucciones bash.
+
+El fichero ".rb" es un fichero fuente que no contiene internamente
+indicación alguna que diga bajo qué programa se ha de ejecutar.
+No obstante, como sabemos que es unfichero de Ruby, porque tiene una
+instrucción Ruby (puts), esto nos indica que hay que ejecutarlo como
+ruby helloWorld.rb.
